@@ -2,11 +2,11 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-sasa-three.apps.chicken.pal.pivotal.io
+  - route: registration-pal-sasa-three.apps.evans.pal.pivotal.io
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-sasa-three.apps.chicken.pal.pivotal.io
+    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-sasa-three.apps.evans.pal.pivotal.io
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-registration-database
